@@ -13,14 +13,6 @@ body{
    
 }
 
-/* for mobile */
-@media screen and (max-width:375px) {
-    main {
-        flex-direction: column;
-        padding: 10px;
-        width: 70%;
-    }
-}
 main {
     /* width: 50%; */
     margin: auto;
@@ -79,6 +71,9 @@ button{
    border: 1px rgb(103, 214, 103) solid;
    cursor: pointer;
 }
+button:hover{
+    background-color: rgba(103, 214, 103, 0.75);
+}
 #last-pen{
     font-size: 10px;
     color: gray;
@@ -87,4 +82,36 @@ button{
 #term-in{
     text-decoration: none;
     color: palevioletred;
+}
+/* input:required:invalid{
+    outline: none;
+    border: none;
+    border: 1px solid hsl(0, 100%, 74%);
+    background-image: url(icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+} */
+/* input:invalid{
+    display: inline;
+    color: hsl(0, 100%, 74%);
+    float: right;
+    font-size: 14px;
+} */
+input:valid{
+    outline: none;
+    border: none;
+    border: 1px solid hsl(154, 59%, 51%);
+}
+/* for mobile */
+@media screen and (max-width:375px) {
+    main {
+        flex-direction: column;
+        padding-top: 20px;
+        width: 70%;
+    }
+
+    button {
+        padding-bottom: 40px;
+    }
 }
